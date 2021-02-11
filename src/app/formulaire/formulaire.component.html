@@ -28,7 +28,7 @@
 </form>
 <div>
   <ul>
-    <ul *ngFor="let personne of personnes">
+    <ul *ngFor="let personne of personnes.reverse()">
       <li>{{personne.nom}} {{personne.prenom}}</li>
     </ul>
   </ul>
