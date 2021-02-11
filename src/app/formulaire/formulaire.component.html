@@ -1,20 +1,26 @@
 <p>formulaire works!</p>
 <div>
-  <input type="text" [(ngModel)]=nom>
+  <input type="text" [(ngModel)]=result>
 </div>
 <div>
   <button (click)='direBonjour()'>cliquer</button>
 </div>
 <div>
-  Bonjour {{ nom }} !!!
+  Bonjour {{ result }} !!!
 </div>
 
 <form #monForm = ngForm>
   <div>
-    Nom : <input type="text" name="nom" [(ngModel)]=personne.nom required>
+    Nom : <input type="text" name="nom" [(ngModel)]=personne.nom required #nom='ngModel'>
+  </div>
+  <div [hidden]="nom.valid">
+    Le nom est obligatoire
   </div>
   <div>
-    Prénom : <input type="text" name="prenom" [(ngModel)]=personne.prenom required>
+    Prénom : <input type="text" name="prenom" [(ngModel)]=personne.prenom required #prenom='ngModel'>
+  </div>
+  <div [hidden]="prenom.valid">
+    Le prénom est obligatoire
   </div>
   <div>
     <button [disabled]=!monForm.valid>Ajouter</button>
