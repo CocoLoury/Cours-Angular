@@ -14,3 +14,6 @@ ng new my-app
 
 ## Lancer le serveur :
 ng serve
+
+## Ajout d'un composant formulaire :
+ng g component formulaire
