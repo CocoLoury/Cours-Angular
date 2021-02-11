@@ -17,3 +17,6 @@ ng serve
 
 ## Ajout d'un composant formulaire :
 ng g component formulaire
+
+## Ajout d'un model de données / une interface :
+ng i interfaces/personne
