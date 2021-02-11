@@ -1,6 +1,6 @@
 <p>formulaire works!</p>
 <div>
-  <input type='text' [(ngModel)]=nom>
+  <input type="text" [(ngModel)]=nom>
 </div>
 <div>
   <button (click)='direBonjour()'>cliquer</button>
@@ -8,3 +8,15 @@
 <div>
   Bonjour {{ nom }} !!!
 </div>
+
+<form #monForm = ngForm>
+  <div>
+    Nom : <input type="text" name="nom" [(ngModel)]=personne.nom required>
+  </div>
+  <div>
+    Prénom : <input type="text" name="prenom" [(ngModel)]=personne.prenom required>
+  </div>
+  <div>
+    <button [disabled]=!monForm.valid>Ajouter</button>
+  </div>
+</form>

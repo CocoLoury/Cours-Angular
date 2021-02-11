@@ -1,3 +1,4 @@
+import { Personne } from './../interfaces/personne';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,6 +10,7 @@ export class FormulaireComponent implements OnInit {
 
   nom = "";
   result = "";
+  personne: Personne = {};
 
   constructor() { }
 
