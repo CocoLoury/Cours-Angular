@@ -26,3 +26,10 @@
     <button [disabled]=!monForm.valid>Ajouter</button>
   </div>
 </form>
+<div>
+  <ul>
+    <ul *ngFor="let personne of personnes">
+      <li>{{personne.nom}} {{personne.prenom}}</li>
+    </ul>
+  </ul>
+</div>
