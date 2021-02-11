@@ -1,13 +1,13 @@
 # Cours-Angular
 
 ## Version de nodeJs :
-    `node --version`
+    node --version
     
 ## Version d'angular CLI :
-      `ng version`
+      ng version
       
 ## Install/update d'angular CI :
-      `npm install -g @angular/cli`
+      npm install -g @angular/cli
       
 ## Créer un nouveau projet : 
-      `ng new my-app`
+      ng new my-app
