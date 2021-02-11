@@ -1,4 +1,10 @@
 <p>formulaire works!</p>
 <div>
-  <button (click)='direBonjour()'>cliquer</button>
+  <input type=text #nom>
+</div>
+<div>
+  <button (click)='direBonjour(nom.value)'>cliquer</button>
+</div>
+<div>
+  Bonjour {{ result }} !!!
 </div>

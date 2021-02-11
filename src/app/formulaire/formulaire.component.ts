@@ -7,11 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormulaireComponent implements OnInit {
 
+  result = "";
+
   constructor() { }
 
   ngOnInit(): void {
   }
-  direBonjour() {
+  direBonjour(nom:string) {
+    this.result = nom;
     console.log('Bonjour, hello, hola');
   }
 
