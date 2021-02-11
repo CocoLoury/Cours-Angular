@@ -8,18 +8,18 @@
 <div>
   Bonjour {{ result }} !!!
 </div>
-
+<br/>
 <form #monForm = ngForm>
   <div>
     Nom : <input type="text" name="nom" [(ngModel)]=personne.nom required #nom='ngModel'>
   </div>
-  <div [hidden]="nom.valid">
+  <div [hidden]="nom.valid || nom.pristine">
     Le nom est obligatoire
   </div>
   <div>
     Prénom : <input type="text" name="prenom" [(ngModel)]=personne.prenom required #prenom='ngModel'>
   </div>
-  <div [hidden]="prenom.valid">
+  <div [hidden]="prenom.valid || prenom.pristine">
     Le prénom est obligatoire
   </div>
   <div>

@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormulaireComponent implements OnInit {
 
-  nom = "";
   result = "";
   personne: Personne = {};
 
@@ -16,7 +15,6 @@ export class FormulaireComponent implements OnInit {
 
   ngOnInit(): void {}
   direBonjour() {
-    this.result = this.nom;
     console.log('Bonjour, hello, hola');
   }
 
